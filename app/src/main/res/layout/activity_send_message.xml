@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SendMessageActivity">
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_area_background"
+        android:ems="10"
+        android:fontFamily="@font/font_light"
+        android:gravity="top|left"
+        android:hint="Write your message here..."
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoImageView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/font_bold"
+        android:text="OR"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/message1CheckBox"
+        app:layout_constraintEnd_toEndOf="@+id/messageEditText"
+        app:layout_constraintStart_toStartOf="@+id/messageEditText"
+        app:layout_constraintTop_toBottomOf="@+id/messageEditText" />
+
+    <CheckBox
+        android:id="@+id/message1CheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/font_light"
+        android:paddingStart="10dp"
+        android:text="Injured"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/messageEditText"
+        app:layout_constraintStart_toStartOf="@+id/messageEditText"
+        app:layout_constraintTop_toBottomOf="@+id/messageEditText"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <CheckBox
+        android:id="@+id/message2CheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font_light"
+        android:paddingStart="10dp"
+        android:text="Trapped"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/message1CheckBox"
+        app:layout_constraintStart_toStartOf="@+id/message1CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/message1CheckBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/message3CheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font_light"
+        android:paddingStart="10dp"
+        android:text="Urgent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/message1CheckBox"
+        app:layout_constraintStart_toStartOf="@+id/message1CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/message2CheckBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/message4CheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font_light"
+        android:paddingStart="10dp"
+        android:text="Unhurt"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/message3CheckBox"
+        app:layout_constraintStart_toStartOf="@+id/message3CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/message3CheckBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/message5CheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font_light"
+        android:paddingStart="10dp"
+        android:text="Medicine Needed"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/message4CheckBox"
+        app:layout_constraintStart_toStartOf="@+id/message4CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/message4CheckBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/message6CheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font_light"
+        android:paddingStart="10dp"
+        android:text="Rescued"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/message5CheckBox"
+        app:layout_constraintStart_toStartOf="@+id/message5CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/message5CheckBox" />
+
+    <Button
+        android:id="@+id/sendMessageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@mipmap/ic_send"
+        android:drawablePadding="25dp"
+        android:fontFamily="@font/font_bold"
+        android:paddingStart="20dp"
+        android:text="Send Message"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textColor="@color/colorFont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/messageEditText"
+        app:layout_constraintStart_toStartOf="@+id/messageEditText"
+        app:layout_constraintTop_toBottomOf="@+id/message5CheckBox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/upload_picture" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_bold"
+        android:text="* Select only 1 message"
+        android:textColor="@color/colorFont"
+        app:layout_constraintEnd_toEndOf="@+id/message5CheckBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/message5CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/message6CheckBox" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/font_light"
+        android:text="Click here to select Location"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/sendMessageButton"
+        app:layout_constraintEnd_toEndOf="@+id/message5CheckBox"
+        app:layout_constraintStart_toStartOf="@+id/message5CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
